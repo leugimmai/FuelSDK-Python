@@ -1,5 +1,15 @@
 from FuelSDK.rest import ET_CUDSupport,ET_CUDSupportRest,ET_GetSupport,ET_Get,ET_Patch,ET_Post,ET_Delete,ET_Configure,ET_Describe
 
+class ET_Automation(ET_CUDSupport):
+    def __init__(self):
+        super(ET_Automation, self).__init__()
+        self.obj_type = 'Automation'
+
+class ET_AutomationActivity(ET_CUDSupport):
+    def __init__(self):
+        super(ET_AutomationActivity, self).__init__()
+        self.obj_type = 'AutomationActivity'
+
 ########
 ##
 ##  wrap an Exact Target Content Area
@@ -90,15 +100,6 @@ class ET_ClickEvent(ET_GetSupport):
 ##  wrap an Exact Target List and List Subscriber
 ##
 ########
-class ET_Automation(ET_CUDSupport):
-    def __init__(self):
-        super(ET_Group, self).__init__()
-        self.obj_type = 'Automation'
-
-class ET_AutomationActivity(ET_CUDSupport):
-    def __init__(self):
-        super(ET_Group, self).__init__()
-        self.obj_type = 'AutomationActivity'
 
 class ET_Group(ET_CUDSupport):
     def __init__(self):
