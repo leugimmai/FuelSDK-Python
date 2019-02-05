@@ -110,29 +110,6 @@
 
       </complexType>
 
-      <complexType name="Automation">
-
-        <complexContent>
-
-          <extension base="tns:APIObject">
-
-            <sequence>
-
-              <element name="ParentFolder" minOccurs="0" type="tns:Automation" />
-
-              <element name="Name" minOccurs="0" type="xsd:string" />
-
-              <element name="Description" minOccurs="0" type="xsd:string" />
-
-            </sequence>
-
-          </extension>
-
-        </complexContent>
-
-      </complexType>
-
-
       <complexType name="DataFolder">
 
         <complexContent>
@@ -145,7 +122,7 @@
 
               <element name="Name" minOccurs="0" type="xsd:string" />
 
-              
+              <element name="Description" minOccurs="0" type="xsd:string" />
 
               <element name="ContentType" minOccurs="0" type="xsd:string" />
 
@@ -3904,6 +3881,25 @@
         </complexContent>
 
       </complexType>
+
+      <complexType name="Automation">
+
+        <complexContent>
+
+          <extension base="tns:APIObject">
+
+            <sequence>
+
+              <element name="Name" minOccurs="0" maxOccurs="1" type="xsd:int" />
+
+            </sequence>
+
+          </extension>
+
+        </complexContent>
+
+      </complexType>
+
 
       <complexType name="UnsubEvent">
 
