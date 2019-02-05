@@ -110,6 +110,27 @@
 
       </complexType>
 
+      <complexType name="Automation">
+
+        <complexContent>
+
+          <extension base="tns:APIObject">
+
+            <sequence>
+
+              <element name="ParentFolder" minOccurs="0" type="tns:Automtion" />
+
+              <element name="Name" minOccurs="0" type="xsd:string" />
+
+            </sequence>
+
+          </extension>
+
+        </complexContent>
+
+      </complexType>
+
+
       <complexType name="DataFolder">
 
         <complexContent>
