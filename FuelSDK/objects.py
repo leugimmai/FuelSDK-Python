@@ -90,6 +90,16 @@ class ET_ClickEvent(ET_GetSupport):
 ##  wrap an Exact Target List and List Subscriber
 ##
 ########
+class ET_Automation(ET_CUDSupport):
+    def __init__(self):
+        super(ET_Group, self).__init__()
+        self.obj_type = 'Automation'
+
+class ET_AutomationActivity(ET_CUDSupport):
+    def __init__(self):
+        super(ET_Group, self).__init__()
+        self.obj_type = 'AutomationActivity'
+
 class ET_Group(ET_CUDSupport):
     def __init__(self):
         super(ET_Group, self).__init__()
