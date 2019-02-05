@@ -118,9 +118,11 @@
 
             <sequence>
 
-              <element name="ParentFolder" minOccurs="0" type="tns:Automtion" />
+              <element name="ParentFolder" minOccurs="0" type="tns:Automation" />
 
               <element name="Name" minOccurs="0" type="xsd:string" />
+
+              <element name="Description" minOccurs="0" type="xsd:string" />
 
             </sequence>
 
@@ -143,7 +145,7 @@
 
               <element name="Name" minOccurs="0" type="xsd:string" />
 
-              <element name="Description" minOccurs="0" type="xsd:string" />
+              
 
               <element name="ContentType" minOccurs="0" type="xsd:string" />
 
