@@ -3882,7 +3882,7 @@
 
       </complexType>
 
-      <complexType name="Automation">
+      <complexType name="Program">
 
         <complexContent>
 
@@ -3890,7 +3890,9 @@
 
             <sequence>
 
-              <element name="Name" minOccurs="0" maxOccurs="1" type="xsd:int" />
+              <element name="Name" minOccurs="0" maxOccurs="1" type="xsd:string" />
+
+              <element name="ProgramID" minOccurs="0" maxOccurs="1" type="xsd:string" />
 
             </sequence>
 

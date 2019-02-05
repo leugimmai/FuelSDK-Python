@@ -3,7 +3,7 @@ from FuelSDK.rest import ET_CUDSupport,ET_CUDSupportRest,ET_GetSupport,ET_Get,ET
 class ET_Automation(ET_CUDSupport):
     def __init__(self):
         super(ET_Automation, self).__init__()
-        self.obj_type = 'Automation'
+        self.obj_type = 'Program'
 
 class ET_AutomationActivity(ET_CUDSupport):
     def __init__(self):
