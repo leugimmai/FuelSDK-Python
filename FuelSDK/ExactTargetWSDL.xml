@@ -3882,27 +3882,6 @@
 
       </complexType>
 
-      <complexType name="Program">
-
-        <complexContent>
-
-          <extension base="tns:APIObject">
-
-            <sequence>
-
-              <element name="Name" minOccurs="0" maxOccurs="1" type="xsd:string" />
-
-              <element name="ProgramID" minOccurs="0" maxOccurs="1" type="xsd:string" />
-
-            </sequence>
-
-          </extension>
-
-        </complexContent>
-
-      </complexType>
-
-
       <complexType name="UnsubEvent">
 
         <complexContent>
