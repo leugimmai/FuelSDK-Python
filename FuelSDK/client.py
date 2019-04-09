@@ -186,7 +186,7 @@ class ET_Client(object):
         token = suds.wsse.UsernameToken('*', '*')
         security.tokens.append(token)
         self.soap_client.set_options(wsse=security)
-        
+        self.soap_client.set_options(timeout=120000)
 
     def refresh_token(self, force_refresh = False):
         """
